@@ -6,10 +6,11 @@ if(!empty($_GET['save']))
 {
     print('Данные сохранены');
 }
-include('index.html');
+include('form.php');
 exit();
 }
 $flag=FALSE;
+
 if(empty($_POST['name']))
 {
     print('Введите имя!');
