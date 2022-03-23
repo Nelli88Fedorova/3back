@@ -10,7 +10,6 @@
 font-size: x-large;
 text-align: center;
 max-width:420px;
-border: 2px solid rgb(26, 18, 144);
 margin: 0 auto;
 margin-top:50px;
 }
