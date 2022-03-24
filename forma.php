@@ -67,7 +67,7 @@ input
        
              <label>
                Сверхспособности:<br />
-               <select name="syperpover []" multiple>
+               <select name="syperpover" multiple>
                  <option selected="selected" value="immortality">бессмертие</option>
                  <option value="passing through walls" >прохождение сквозь стены</option>
                  <option value="levitation">левитация</option>
