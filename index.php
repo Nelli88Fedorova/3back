@@ -1,15 +1,14 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
-if($_SERVER['REQUEST_METHOD']=='GET')
-{
-if(!empty($_GET['save']))
-{
-    print('Данные сохранены');
+if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+    if (!empty($_GET['save'])) {
+        print('Спасибо, результаты сохранены.');
+    }
+    // Включаем содержимое файла form.php.
+    include('form.php');
+    exit();
 }
- include('form.php');
-    
-exit();
-}
+
 $flag=FALSE;
 
 if(empty($_POST['name']))
