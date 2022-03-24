@@ -69,7 +69,7 @@ try{
     $stmt=$bd->prepare("INSERT INTO MainData SET name = ?, email = ?, age=?, gender=?, numberOfLimb=?, biography=?");
     $stmt->execute(array($name, $email,$date, $gender,$hand, $biography));
 
-    $super=$db->>prepare("INSERT INTO Superpovers SET superpower=?");
+    $super=$db->prepare("INSERT INTO Superpovers SET superpower=?");
     $super->execute(array($syperpover));
 }
 catch(PDOException $e)
