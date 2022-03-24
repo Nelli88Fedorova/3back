@@ -6,7 +6,8 @@ if(!empty($_GET['save']))
 {
     print('Данные сохранены');
 }
-include('forma.php');
+
+    include('forma.php');
 exit();
 }
 $flag=FALSE;
