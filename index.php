@@ -74,7 +74,7 @@ try{
 }
 catch(PDOException $e)
 {
-    print('Error:'.$e->>GetMessage());
+    print('Error:'.$e->GetMessage());
     exit();
 }
 header('Location: ?save=1');
