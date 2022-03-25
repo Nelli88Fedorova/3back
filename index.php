@@ -61,6 +61,7 @@ $hand=$_POST['hand'];
 $biography=$_POST['biography'];
 $check=$_POST['check'];
 $syperpover=implode(',',$_POST['syperpover']);
+echo $syperpover;
 
 $user='u47586'; $pass='3927785';
 $db=new PDO('mysql:host=localhost;dbname=u47586',$user,$pass, array(PDO::ATTR_PERSISTENT=>true));
