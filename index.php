@@ -61,7 +61,7 @@ $hand=$_POST['hand'];
 $biography=$_POST['biography'];
 $check=$_POST['check'];
 $syperpover=implode(',',$_POST['syperpover']);
-echo $syperpover;
+print($syperpover);
 
 $user='u47586'; $pass='3927785';
 $db=new PDO('mysql:host=localhost;dbname=u47586',$user,$pass, array(PDO::ATTR_PERSISTENT=>true));
@@ -71,7 +71,7 @@ try{
     $stmt->execute(array($name, $email,$date, $gender,$hand, $biography));
 
     $super=$db->prepare("INSERT INTO Superpovers SET superpower=?");
-    $super->execute(array($syperpover));
+    $super->execute($syperpover);
 }
 catch(PDOException $e)
 {
